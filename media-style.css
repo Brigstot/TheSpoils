@@ -1,0 +1,37 @@
+/* Media query to stack videos vertically on smaller screens */
+@media (max-width: 768px) {
+    .containerVideo {
+        flex-direction: column; /* Stack videos vertically */
+    }
+
+    .sectionVideo {
+        margin-left: 0; /* Remove horizontal margin when stacked */
+        margin-right: 0; /* Remove horizontal margin when stacked */
+        width: 100%; /* Take full width on smaller screens */
+        margin-top: 1vw; /* Adjust top margin for consistent spacing */
+    }
+
+    .sectionReviews {
+        flex-direction: column; /* Stack review cards vertically */
+        margin-bottom: -20px; /* Space between vertically stacked cards */
+    }
+
+    .sectionReviewsContent {
+        width: 80%; /* Adjust the width to fit the screen size better */
+        margin-left: auto; /* Center the review cards horizontally */
+        margin-right: auto; /* Center the review cards horizontally */
+        margin-bottom: 10px; /* Space between vertically stacked cards */
+    }
+
+    .sectionReviewsContent h3{
+        margin: 0;
+        margin-top: -3vw;
+        padding: 0;
+    }
+
+    .sectionReviewsContentText{
+        padding-bottom: 1vw;
+        margin-top: -3vw;
+    }
+
+}

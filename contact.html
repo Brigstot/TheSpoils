@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Band | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="songlist.html">Song List</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main class="main-container">
+        <!-- Main content goes here -->
+    <div class="banner-container">
+         <div class="banner1">
+            <img src="imgs/Alive Network Badge.png" alt="">
+            <img src="imgs/Entertainment Nation Badge.png" alt="">
+         </div>
+
+         <div class="banner2">
+            <img src="imgs/RnR Bride Badge.png" alt="">
+            <img src='https://encoremusicians.com/img/embeds/badge-green.svg' alt=''>
+        </div>
+    </div>
+
+            <div class="sectionContact">
+            <div class="nav-logo">
+            <a href="index.html">
+                <img src="imgs/Spoils Logo.png" alt="Band Logo">
+            </a>
+        </div><br>
+
+
+
+                <h1>Contact</h1>
+                <form action="process_form.php" method="post" target="_blank">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="enquiryType">Enquiry Type:</label>
+                        <select id="enquiryType" name="enquiryType" required>
+                            <option value="">Select Enquiry Type</option>
+                            <option value="RequestQuote">Request Quote</option>
+                            <option value="GeneralEnquiry">General Enquiry</option>
+                        </select>
+                    </div>
+                
+                    <!-- Conditional fields for "Request Quote" -->
+                    <div id="quoteFields" style="display: none;">
+                        <div class="form-group">
+                            <label for="mainPackage">Main Package:</label>
+                            <select id="mainPackage" name="mainPackage">
+                                <option value="Duo">Duo</option>
+                                <option value="Trio">Trio</option>
+                                <option value="4Piece">4 Piece</option>
+                                <option value="5Piece">5 Piece</option>
+                                <option value="6PieceSaxophone">6 Piece (with Saxophone)</option>
+                                <option value="7PieceSaxTrumpet">7 Piece (with Saxophone and Trumpet)</option>
+                            </select>
+                        </div>
+                
+                        <div class="form-group">
+                            <label>Add-ons:</label>
+                            <div class="checkbox-container">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="firstDance" name="addons[]" value="FirstDance">
+                                    <label for="firstDance">First Dance</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="standardWedding" name="addons[]" value="StandardWedding">
+                                    <label for="standardWedding">Standard Wedding Package</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="premiumWedding" name="addons[]" value="PremiumWedding">
+                                    <label for="premiumWedding">Premium Wedding Package</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="unmannedDJ" name="addons[]" value="UnmannedDJ">
+                                    <label for="unmannedDJ">After Performance Unmanned DJ</label>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="venuePostcode">Venue Postcode:</label>
+                            <input type="text" id="venuePostcode" name="venuePostcode">
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="eventDate">Event Date:</label>
+                            <input type="date" id="eventDate" name="eventDate">
+                        </div>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                
+                    <div class="form-group">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+                
+                <div class="contact-info">
+                    <h2>Email</h2>
+                    <p>enquiries@thespoils.co.uk</p>
+                </div>
+                
+                
+                
+                
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
